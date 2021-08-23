@@ -2,10 +2,11 @@
 
 ## LOCAL
 ### Crear entorno
-
+```bash
 conda create -n spacy-test python=3.7
 conda activate spacy-test
 pip install -r requirements.txt
+```
 
 ### Correr app
 cd app
@@ -45,4 +46,13 @@ curl --header "Content-Type: application/json" \
 
 ### Pushearlo:
 docker push jganzabal/docker-test:v1
+
+Debería por bajarse ahora con 
+docker pull jganzabal/docker-test
+
+
+# UWSGI
+Si quiere profundizar
+
+https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04
 
